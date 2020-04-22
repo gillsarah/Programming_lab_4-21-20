@@ -125,6 +125,14 @@ def my_gen(stop):
 generator = my_gen(100) #create an instance of the generator, get at most 100
 next(generator) #next is a built in fn. calls generator one more time each time I call next 
 
+def my_count(stop):
+    v = -1
+    while  v <= stop: #to get only a fixed number (in general, make sure your while loops don't go forever)
+        v += 1
+        return v 
+
+my_count(10)
+
 
 #####
 #lambdas -anonymous functions
